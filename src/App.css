@@ -116,3 +116,150 @@ body {
   background: #38bdf8;
   color: #000000;
 }
+/* SIGNUP PAGE */
+
+.signup-page {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background:
+    radial-gradient(circle at top left, #bae6fd 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #e0f2fe 0%, transparent 35%),
+    #f8fafc;
+}
+
+.signup-box {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 45px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.15);
+}
+
+.signup-box h1 {
+  text-align: center;
+  color: #0f172a;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.signup-box > p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+  font-family: Arial, sans-serif;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: #7dd3fc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+.signup-box button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-box button:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+  .signup-page {
+    padding: 30px 15px;
+  }
+
+  .signup-box {
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .signup-box h1 {
+    font-size: 28px;
+  }
+}
+.error-message {
+  display: block;
+  margin-top: 6px;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+}
+.success-message {
+  display: block;
+  margin-top: 6px;
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 600;
+}
+.password-checklist {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.valid-check {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.invalid-check {
+  color: #dc2626;
+  font-weight: 600;
+}

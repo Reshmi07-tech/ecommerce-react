@@ -5,6 +5,7 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
+import Signup from "./pages/Signup";
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/cart">🛒 Cart</Link>
+            <Link to="/signup">Sign Up</Link>
           </div>
         </nav>
 
@@ -53,6 +55,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
 
       </div>
